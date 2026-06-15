@@ -93,3 +93,24 @@ header nav a:hover { color: #30b868; }
 .cards h3 { margin-bottom: 10px; }
 
 .cards p { color: #627382; font-size: 15px; }
+
+.brain {
+  display: flex; align-items: center; gap: 50px;
+  padding: 120px 20px 32px; flex-wrap: wrap;
+}
+
+.brain > img { flex: 1; min-width: 280px; max-width: 50%; }
+
+.brain > div { flex: 1; min-width: 280px; }
+
+.brain .tag { color: #30b868; font-weight: 700; text-transform: uppercase; margin-bottom: 10px; }
+
+.brain h2 { font-size: clamp(32px, 4vw, 55px); margin-bottom: 20px; }
+
+.brain .desc { color: #627382; line-height: 1.6; margin-bottom: 25px; }
+
+.brain ul { list-style: none; }
+
+.brain li { display: flex; gap: 10px; margin-bottom: 12px; font-weight: 500; }
+
+.brain li img { width: 20px; height: 20px; margin-top: 2px; }
