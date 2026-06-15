@@ -145,3 +145,43 @@ header nav a:hover { color: #30b868; }
   margin-top: 20px; font-size: 16px; font-weight: 400;
   color: #627382; line-height: 1.25;
 }
+
+footer { background: #001931; color: #fff; padding: 120px 0 30px; }
+
+.footer-top {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 85px;
+}
+.footer-logo { display: block; }
+
+.footer-social { text-align: right; }
+
+.footer-social h5 {
+  font-size: 22px; font-weight: 400; color: #fff; margin-bottom: 20px;
+}
+
+.social-icons { display: flex; gap: 20px; justify-content: flex-end; }
+.social-icons a { display: block; transition: transform .3s ease; }
+.social-icons a:hover { transform: translateY(-4px); }
+.social-icons img { width: 40px; height: 40px; display: block; }
+
+.footer-line {
+  border-bottom: 1px solid #fff; opacity: .2; margin-bottom: 30px;
+}
+
+.footer-copy { text-align: center; font-size: 17px; color: #fff; }
+
+@media (max-width: 900px) {
+  header nav { position: static; transform: none; }
+  header { flex-wrap: wrap; justify-content: center; gap: 15px; }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .brain > img { max-width: 100%; }
+  .early h2 { font-size: 32px; }
+  .early { padding: 60px 24px; }
+  .footer-top { flex-direction: column; gap: 30px; text-align: center; margin-bottom: 50px; }
+  .footer-social { text-align: center; }
+  .social-icons { justify-content: center; }
+}
+@media (max-width: 500px) {
+  .cards { grid-template-columns: 1fr; }
+}
